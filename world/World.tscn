@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6gymogbj44jd"]
+
+[ext_resource type="Texture2D" uid="uid://c0l58w8vo4dww" path="res://icon.svg" id="1_sy0ay"]
+[ext_resource type="PackedScene" uid="uid://cgaimft2t6yvh" path="res://player/Player.tscn" id="2_xwe3x"]
+[ext_resource type="PackedScene" uid="uid://bino6axmy532r" path="res://enemies/slime/Slime.tscn" id="3_s3db1"]
+
+[node name="World" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(76, 69)
+texture = ExtResource("1_sy0ay")
+
+[node name="Player" parent="." instance=ExtResource("2_xwe3x")]
+
+[node name="Slime" parent="." instance=ExtResource("3_s3db1")]
+position = Vector2(439, -105)
